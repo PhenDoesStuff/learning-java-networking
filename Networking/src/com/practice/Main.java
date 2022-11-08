@@ -9,11 +9,12 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            URI uri = new URI("http://username:password@myserver.com:5000/catalog/phones?os=android#samsung");
-//            URI uri = new URI("hello");
+//            URI uri = new URI("http://username:password@myserver.com:5000/catalog/phones?os=android#samsung");
+            URI uri = new URI("/catalog/phones?os=android#samsung");
 
             URL url = uri.toURL();
             System.out.println("URL = " + url);
+//            URI uri = new URI("hello");
 
 //            System.out.println("Scheme = " + uri.getScheme());
 //            System.out.println("Scheme-specific part = " + uri.getSchemeSpecificPart());
