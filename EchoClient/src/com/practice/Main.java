@@ -19,7 +19,7 @@ public class Main {
             String response;
 
             do {
-                System.out.println("Enter string to be echoed");
+                System.out.print("Enter string to be echoed: ");
                 echoString = scanner.nextLine();
 
                 stringToEcho.println(echoString);
@@ -28,7 +28,7 @@ public class Main {
                     System.out.println(response);
                 }
             } while (!echoString.equals("exit"));
-            
+
         } catch (IOException e) {
             System.out.println("Client Error: " + e.getMessage());
         }
